@@ -22,7 +22,7 @@ function OrderModal({ order, setOrderModal }) {
       })
     });
     const data = await response.json();
-    const id = await data.id
+    const id = await data.id;
     if (response.status === 200) {
       navigate(`/order-confirmation/${id}`);
     }
